@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72462085-33E5-42AB-BB4F-C926D5DD4284}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RestaurantMenu2</RootNamespace>
+    <AssemblyName>RestaurantMenu2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cafe\Brioche\AddDishBrioche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\Brioche\AddDishBrioche.Designer.cs">
+      <DependentUpon>AddDishBrioche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\Brioche\AddDishBriocheSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\Brioche\AddDishBriocheSM.Designer.cs">
+      <DependentUpon>AddDishBriocheSM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\Brioche\FormBrioche1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\Brioche\FormBrioche1.Designer.cs">
+      <DependentUpon>FormBrioche1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\Brioche\FormBrioche2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\Brioche\FormBrioche2.Designer.cs">
+      <DependentUpon>FormBrioche2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\Brioche\SeasonMenuBrioche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\Brioche\SeasonMenuBrioche.Designer.cs">
+      <DependentUpon>SeasonMenuBrioche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\AddDishSugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\AddDishSugar.Designer.cs">
+      <DependentUpon>AddDishSugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\AddDishSugarSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\AddDishSugarSM.Designer.cs">
+      <DependentUpon>AddDishSugarSM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\FormSugar1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\FormSugar1.Designer.cs">
+      <DependentUpon>FormSugar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\FormSugar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\FormSugar2.Designer.cs">
+      <DependentUpon>FormSugar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\SeasonMenuSugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop\Sugar\SeasonMenuSugar.Designer.cs">
+      <DependentUpon>SeasonMenuSugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAll.Designer.cs">
+      <DependentUpon>FormAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\FormCafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\FormCafe.Designer.cs">
+      <DependentUpon>FormCafe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeShop\FormCoffeeShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop\FormCoffeeShop.Designer.cs">
+      <DependentUpon>FormCoffeeShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FormRestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FormRestaurant.Designer.cs">
+      <DependentUpon>FormRestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurant\Gastronomy\AddDishGastronomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\AddDishGastronomy.Designer.cs">
+      <DependentUpon>AddDishGastronomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\AddDishGastronomySM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\AddDishGastronomySM.Designer.cs">
+      <DependentUpon>AddDishGastronomySM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\FormGastronomy1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\FormGastronomy1.Designer.cs">
+      <DependentUpon>FormGastronomy1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\FormGastronomy2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\FormGastronomy2.Designer.cs">
+      <DependentUpon>FormGastronomy2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\SeasonMenuGastronomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Gastronomy\SeasonMenuGastronomy.Designer.cs">
+      <DependentUpon>SeasonMenuGastronomy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cafe\Brioche\AddDishBrioche.resx">
+      <DependentUpon>AddDishBrioche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\Brioche\AddDishBriocheSM.resx">
+      <DependentUpon>AddDishBriocheSM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\Brioche\FormBrioche1.resx">
+      <DependentUpon>FormBrioche1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\Brioche\FormBrioche2.resx">
+      <DependentUpon>FormBrioche2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\Brioche\SeasonMenuBrioche.resx">
+      <DependentUpon>SeasonMenuBrioche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop\Sugar\AddDishSugar.resx">
+      <DependentUpon>AddDishSugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop\Sugar\AddDishSugarSM.resx">
+      <DependentUpon>AddDishSugarSM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop\Sugar\FormSugar1.resx">
+      <DependentUpon>FormSugar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop\Sugar\FormSugar2.resx">
+      <DependentUpon>FormSugar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop\Sugar\SeasonMenuSugar.resx">
+      <DependentUpon>SeasonMenuSugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAll.resx">
+      <DependentUpon>FormAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\FormCafe.resx">
+      <DependentUpon>FormCafe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop\FormCoffeeShop.resx">
+      <DependentUpon>FormCoffeeShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FormRestaurant.resx">
+      <DependentUpon>FormRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Restaurant\Gastronomy\AddDishGastronomy.resx">
+      <DependentUpon>AddDishGastronomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\Gastronomy\AddDishGastronomySM.resx">
+      <DependentUpon>AddDishGastronomySM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\Gastronomy\FormGastronomy1.resx">
+      <DependentUpon>FormGastronomy1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\Gastronomy\FormGastronomy2.resx">
+      <DependentUpon>FormGastronomy2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\Gastronomy\SeasonMenuGastronomy.resx">
+      <DependentUpon>SeasonMenuGastronomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\FormAll.datasource" />
+    <None Include="Properties\DataSources\FormCafe.datasource" />
+    <None Include="Properties\DataSources\FormCoffeeShop.datasource" />
+    <None Include="Properties\DataSources\FormGreenCat1.datasource" />
+    <None Include="Properties\DataSources\FormRestaurant.datasource" />
+    <None Include="Properties\DataSources\Model.Core.ChangeMenu.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.ColdDish.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.Dessert.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.Dish.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.Drink.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.HotDish.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.Snacks.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Dishes.Soup.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Est.Cafe.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Est.CoffeeHouse.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Est.Establishment+UpdateMenu.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Est.Establishment.datasource" />
+    <None Include="Properties\DataSources\Model.Core.Est.Restaurant.datasource" />
+    <None Include="Properties\DataSources\Model.Core.IMenu.datasource" />
+    <None Include="Properties\DataSources\Model.Core.ISeasonMenu.datasource" />
+    <None Include="Properties\DataSources\Model.Data.DataInitializer.datasource" />
+    <None Include="Properties\DataSources\Model.Data.JSONSerializer.datasource" />
+    <None Include="Properties\DataSources\Model.Data.Serializer.datasource" />
+    <None Include="Properties\DataSources\Model.Data.XmlSerializer.datasource" />
+    <None Include="Properties\DataSources\Model.Repositories.MenuRepository.datasource" />
+    <None Include="Properties\DataSources\Model.UserControl1.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Cafe.Brioche.FormBrioche1.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Cafe.Brioche.FormBrioche2+DishDisplay.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Cafe.Brioche.FormBrioche2.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Cafe.Green_Cat.FormGreenCat2.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.CoffeeShop.Hammer.FormHammer1.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.CoffeeShop.Hammer.FormHammer2.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.CoffeeShop.Sugar.FormSugar1.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.CoffeeShop.Sugar.FormSugar2.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Restaurant.Gastronomy.FormGastronomy1.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Restaurant.Gastronomy.FormGastronomy2.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Restaurant.Samurai.FormSamurai1.datasource" />
+    <None Include="Properties\DataSources\RestaurantMenu2.Restaurant.Samurai.FormSamurai2.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Model\Model\Model.csproj">
+      <Project>{996d05e5-43be-4b16-834a-f14bc7c2a7c9}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
